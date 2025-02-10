@@ -1,0 +1,31 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Michael Joseph James </title>
+  <meta name="Michael Joseph James">
+  <link rel="stylesheet" href="./css/main.css">
+
+
+</head>
+
+<body>
+ 
+    <ul id="topnav">
+      <li ><a class="navBar" href="index.html">Home</a></li>
+      <li><a class="navBar" href="projects.html">Projects</a></li>
+      <li><a class="navBar"href="contact.html">Contacts</a></li>
+      </ul>
+    <script src="example2.js"></script>
+    </body> 
+    </br>
+    <H1>Welcome to Michael Joseph James' Portfolio</H1>
+<div id="main"><h2>Purpose: Pen and Paper RPG Charector Generator</h2><p>The purpose of this project is to randomly generate a pen and paper RPG charector. Normally to complete this process players will have to roll very specific dice in succession and record the results. We will be using a function that will allow us to complete this task effortlessly. </p> <h2>What will we need to complete this task?</h2><p>Javascript contains a build in function called Math.random. This function can be used to generate random numbers between a specific range of numbers. The function will require that the user specify the range as well as add 1 to it. An example of how to use this function is below. </br><h3 id="h3ex">Math.floor((Math.random() * 100) + 1);</h3>The above funtion will return a number between 1 and 100. It will also specify that the function return a whole number in that range and not a decimal number.</p><h2>Ok we have the numbers now what do we do?</h2><p>After Javascript has generated our random numbers we will need to save them and recall them later to be displayed on screen. How do we do this? We will add all the numbers to an array by using a loop function. The loop functions main purpose is to keep generating our random numbers and adding them to an array.</p><h3 id="h3ex">for(let i = 0; i < 10; i++){ }</h3><p>Ok so the example above is a loop but what does it mean. The for loop takes 3 variables to which are noted in the () and followed by the ; symbol. THe first is declaring a variable for the loop to start counting from. In this case we have choose the number zero. The next statement tells the loop what will call the loop to continue looping. For this example we stated if i is less than ten please keep going. And finally the last variable is telling the function to increase i each time it loops through the line of code. <h2>Alright lets save thoose numbers and get them on the screen</h2></h3><p>Alright we know how to generate numbers and now how to keep generating them until we have 10 random numbers lets save them so we can use them again. First we have to declare an empty array. To declare an empty array we will use</p><h3 id="h3ex">let numbers = []</h3><p>let will tell java script that we want to declare a variable. Remember a variable is a piece of data we want to either recall or alter later. By declaring numbers as an empty array we define it and we can add to it later.Each time we loop throung our function we want to add the random number to the array. How do we do that><h3 id="h3ex">numbers.push( **The string or variable we want to add** )</h3></p><h2>Ok lets put this all together and try it</h2><p>First thing we need to do it make a button that when we click on it will call a javascript function. </p><button onclick="generate()">Click Here to start</button><p id="output"></p><p><h2>That worked but can we make it better?</h2>Yes we can. We will actually make another function similiar to the one we already made. However we will use a static array with the words that define each attribute. We will also make the output formatting look better by adding design and other properties. </br> </p><button onclick="generate2()">Generate Charector</button><p id="better"></p>
+</div>
+    
+
+<footer>©Michael Joseph James 2021.</footer>
+</body>
+</htm

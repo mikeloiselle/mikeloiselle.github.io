@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Michael Joseph James </title>
+  <meta name="Michael Joseph James">
+  <link rel="stylesheet" href="./css/main.css">
+
+
+</head>
+
+<body>
+ 
+    <ul id="topnav">
+      <li ><a class="navBar" href="index.html">Home</a></li>
+      <li><a class="navBar" href="projects.html">Projects</a></li>
+      <li><a class="navBar"href="contact.html">Contacts</a></li>
+      </ul>
+    </body> 
+    </br>
+    <H1>Welcome to Michael Joseph James' Portfolio</H1>
+<div id="main"><h2 id="h2title">Data Type Basic</h2><p>Every programming language includes the ability to save variables.</br></br> <i><u>What is a variable you might ask?</u></i></br></br> A variable is the ability to store, recall and manipulate data within a program or process. Once data has been defined it can quickly be recalled and change to meet the users needs. </br></br> <i><u>What date types are available to programmers?</u></i></br></br>Programmers have the ability to save Numbers, Strings(words), Booleon (yes/no) and Arrays (a collection of variables)</p><p><h2 id="h2title">Examples of using variables in programming</h2> Please enter you name in the text box.</br>Afterwards please click submit.</br>  <input type="text" id="fname" name="fname"><input type="submit" onclick="display()"><br><p></p><br></p></div>
+<footer>©Michael Joseph James 2021.</footer>
+
+<script>
+     function display(){
+        var name = document.getElementById('fname').value;
+        console.log(name);
+         document.getElementById("main").innerHTML += "Hello " + name + "</br>" + "Thank you for your input. </br> We just assigned a variable using a function and were able to output it to the screen";
+        
+    }
+</script>
+</body>
+</html>

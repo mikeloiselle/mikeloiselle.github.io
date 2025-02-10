@@ -1,0 +1,131 @@
+li {
+  float: left;
+  list-style-type: none;
+  width: 33.33%;
+}
+
+body {
+  background-color: #242333;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+h1 {
+  color: ghostwhite;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 100px;
+  //font-family: fantasy;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/*
+p{
+font-weight:bold;
+ font-size: medium;
+//width: 85%; 
+background-color: beige;
+//padding-left: 60px;
+margin-left: 5%;    
+margin-right: 5%;
+font-family: sans-serif;
+border-radius: 15px;
+
+}
+*/
+#topnav {
+  //  padding-bottom: 5px;
+  padding-left: 0px;
+}
+
+.navBar {
+  display: block;
+  padding: 8px;
+  background-color: #01b0d3;
+  text-decoration: none;
+  color: ghostwhite;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  //width: 33.33%;
+  x//float: left;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  font-size: small;
+}
+
+#main {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+  font-size: medium;
+  background-color: beige;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: sans-serif;
+  border-radius: 15px;
+}
+
+#mainContact {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+  font-size: 40px;
+  background-color: beige;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: sans-serif;
+  border-radius: 15px;
+  height: 550px;
+}
+
+#contact {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 400px;
+  border-radius: 25px;
+  float: right;
+}
+
+.project {
+  float: none;
+  font-size: 24px;
+  padding: 10px;
+  width: auto;
+}
+
+#h2title {
+  color: red;
+}
+
+a {
+  color: black;
+}
+
+#h3ex {
+  color: #663d61;
+}
+
+#better{
+background-color: royalblue
+ //color: crimson;    
+}
+
+#resume{
+    font-size: 40px;
+}
