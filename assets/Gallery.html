@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Michael Loiselle JD Power Gallery</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .main-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    overflow: hidden;
+  }
+
+  .main-image img {
+    max-width: 100%;
+    max-height: 100%;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  .swiper {
+    background: #222;
+    padding: 10px 0;
+  }
+
+  .swiper-slide {
+    width: auto;
+    text-align: center;
+  }
+
+  .swiper-slide img {
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+  }
+
+  .swiper-slide img:hover {
+    border-color: #fff;
+  }
+</style>
+</head>
+<body>
+
+<div class="main-image">
+  <img id="displayImage" src="./assets/cars/Mitsubishi.png" alt="Main" />
+</div>
+
+<div class="swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="./assetsMitsubishi.png" data-full="./assets/Mitsubishi.png" /></div>
+     <div class="swiper-slide"><img src="./assetsAcura.png" data-full="./assets/Acura.png" /></div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+  const mainImg = document.getElementById('displayImage');
+
+  // Swiper carousel
+  const swiper = new Swiper('.swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+  });
+
+  // Click thumbnail to change main image
+  document.querySelectorAll('.swiper-slide img').forEach(img => {
+    img.addEventListener('click', () => {
+      mainImg.src = img.dataset.full;
+    });
+  });
+
+  // Click main image for fullscreen
+  mainImg.addEventListener('click', () => {
+    if (mainImg.requestFullscreen) {
+      mainImg.requestFullscreen();
+    } else if (mainImg.webkitRequestFullscreen) { // Safari
+      mainImg.webkitRequestFullscreen();
+    } else if (mainImg.msRequestFullscreen) { // IE11
+      mainImg.msRequestFullscreen();
+    }
+  });
+</script>
+
+</body>
+</html>
