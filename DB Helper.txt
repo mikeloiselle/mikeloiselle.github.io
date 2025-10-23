@@ -1,0 +1,4 @@
+CREATE TABLE actor (name VARCHAR(255) NOT NULL,class VARCHAR(255) NOT NULL,str INT NOT NULL,agi INT NOT NULL,end INT NOT NULL,intu INT NOT NULL,log INT NOT NULL,will INT NOT NULL,cha INT NOT NULL,luck INT NOT NULL,rep INT NOT NULL,magic INT NOT NULL);
+INSERT INTO actor (name,class,str,agi,end,intu,log,will,cha,luck,rep,magic)VALUES('Michael Loiselle', 'Drifter', 65,76,37,59,66,87,93,7,65,10);
+
+'Name','Class','Strength','Agility','Endurance','Intelligence','Intuition','Willpower','Charisma','Luck','Reputation','Magic'

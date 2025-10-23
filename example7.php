@@ -20,7 +20,7 @@ v<!doctype html>
       </ul>
     </body> 
     </br>
-    <H1>Welcome to Michael Joseph James' Portfolio</H1>
+    <H1>Welcome to Mike Loiselle's Portfolio</H1>
     <div id="main"><h2>Revisions to Pen and Paper RPG maker</h2><p>Before we made a pen and paper rpg character generator. Each time we created a charector we only created it in the browser. Once our browser was closed the charector did not exhist anymore. So this time we will make a connection with PHP and save the charector to a database. This way we can recall all charectors we created and make more. We will first have to make a generate button to create a new roleplaying charector.</br></br>
     <form method ="post">
   <label for="fname">Name:</label>
@@ -28,6 +28,7 @@ v<!doctype html>
   <label for="lname">Class:</label>
   <input type="text" id="class" name="class"><br><br>        
   <button type="submit" name="button1" value = "button1">Generate Charector</button>
+  <button type="submit" name="button2" value = "button2">Recall Charectors</button>
   </form>
 <?php
      include 'pdo.php';
@@ -50,6 +51,29 @@ v<!doctype html>
     }
     }
 
+    if(isset($_POST['button2'])){
+     //$attributes = ['Name','Class','Strength','Agility','Endurance','Intelligence','Intuition','Willpower','Charisma','Luck','Reputation','Magic'];
+      //echo "Retrieved";
+      echo "<table>
+      <thead>
+          <tr>
+          <th>Name</th>
+          <th>Class</th>
+          <th>Strength</th>
+          <th>Agility</th>
+          <th>Endurance</th>
+          <th>Intelligence</th>
+          <th>Intuition</th>
+          <th>Willpower</th>
+          <th>Charisma</th>
+          <th>Luck</th>
+          <th>Reputation</th>
+          <th>Magic</th>
+       </tr>
+      </thead>
+      <tbody>
+          <tr>";
+    }
   
 ?>
  

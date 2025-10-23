@@ -1,29 +1,52 @@
-<!doctype html>
+<script>
+const toggleButton = document.querySelector('.toggle-button');
+const navbarLinks = document.querySelector('.navbar-links');
+toggleButton.addEventListener('click', () => {
+navbarLinks.classList.toggle('active');
+});
+</script>
 
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Michael Joseph James </title>
-  <meta name="Michael Joseph James">
-  <link rel="stylesheet" href="./css/main.css">
-
+<meta charset="utf-8">
+<title>Michael Loiselle Portfolio</title>
+<meta name="description" content="Web Developer Portfolio of Michael Loiselle">
+<link rel="stylesheet" href="./css/test.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
 <body>
-
-<div>
- 
-    <ul id="topnav">
-      <li ><a class="navBar" href="index.html">Home</a></li>
-      <li><a class="navBar" href="projects.html">Projects</a></li>
-      <li><a class="navBar"href="contact.html">Contacts</a></li>
-      </ul>
+<header>
+<nav class="navbar">
+<div class="brand-title">Michael Loiselle</div>
+<a href="#" class="toggle-button">
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+</a>
+<div class="navbar-links">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
 </div>
-</br>
-    <H1 >Welcome to Michael Joseph James' Portfolio</H1>
-    <div id="main">Welcome to the personal website of Michael Joseph James. I am a self-employed Web Developer looking for a permanent position in the industry. Previously, I worked in the Electrical field, but a car accident in 2018 required that I switch careers. </br></br> Attending Fanshawe College in London, Ontario has provided me with all the necessary skills to be successful in the industry. Through schooling and self-learning, I have experience in front end technologies such as CSS, React and Javascript; as well as back-end technologies including Node.JS, C# and PHP. I also have experience working with Dev-ops technologies for LAMP and WAMP. </br> After graduating from Fanshawe with Honours, I briefly attended Centennial College online for video game design. Already being familiar with how to do programming, I was able to transfer immediately into second year. Unfortunately, due to the pandemic and childcare responsibilities, I was unable to complete the course. However, I gained further knowledge in the fields of Java, Object-Oriented Programming and Digital Art. </br></br> Please take a moment to check out my projects tab on this website to see examples of what I am capable of as a programmer. I have also included some videolinks to different projects I have completed. Thank you for taking the time to read my profile.</div>
-    <script>
-    </script>
-<footer>©Michael Joseph James 2025.</footer>
+</nav>
+</header>
+
+<main>
+<h1>Welcome to Michael Loiselle’s Portfolio</h1>
+<section class="intro">
+<p>
+Welcome to my personal website. I am a Web Developer with hands-on experience in front-end and back-end technologies,
+including HTML, CSS, JavaScript, React, Node.js, C#, and PHP. After transitioning from the electrical field, I’ve dedicated
+myself to building efficient, accessible, and modern digital solutions.
+</p>
+</section>
+</main>
+
+<footer>© Michael Loiselle 2025</footer>
+
+
 </body>
 </html>
