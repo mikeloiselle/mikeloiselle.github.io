@@ -1,0 +1,186 @@
+/* Base Styles */
+body {
+font-family: 'Inter', sans-serif;
+margin: 0;
+background-color: #F7F6F3;
+color: #1E293B;
+}
+
+/* Navbar */
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #334155;
+padding: 0.8rem 1.5rem;
+}
+
+.brand-title {
+font-size: 1.5rem;
+color: #F7F6F3;
+font-weight: bold;
+}
+
+.navbar-links ul {
+list-style: none;
+display: flex;
+margin: 0;
+padding: 0;
+}
+
+.navbar-links li {
+margin: 0 1rem;
+}
+
+.navbar-links a {
+color: #F7F6F3;
+text-decoration: none;
+font-weight: 500;
+}
+
+.navbar-links a:hover {
+color: #2DD4BF;
+}
+
+/* Hamburger Menu */
+.toggle-button {
+position: relative;
+display: none;
+flex-direction: column;
+justify-content: space-between;
+width: 25px;
+height: 21px;
+}
+
+.toggle-button .bar {
+height: 3px;
+width: 100%;
+background-color: #F7F6F3;
+border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+.toggle-button {
+display: flex;
+}
+
+.navbar-links {
+display: none;
+width: 100%;
+}
+
+.navbar-links.active {
+display: flex;
+flex-direction: column;
+text-align: center;
+background-color: #334155;
+}
+
+.navbar-links ul {
+flex-direction: column;
+width: 100%;
+}
+
+.navbar-links li {
+padding: 0.8rem 0;
+}
+}
+
+/* Main Content */
+main {
+padding: 2rem 10%;
+text-align: center;
+}
+
+h1 {
+color: #0EA5E9;
+font-size: 2.2rem;
+}
+
+.intro {
+margin-top: 1rem;
+background-color: #fff;
+padding: 2rem;
+border-radius: 10px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Footer */
+footer {
+text-align: center;
+background-color: #334155;
+color: #F7F6F3;
+padding: 1rem;
+font-size: 0.9rem;
+margin-top: 2rem;
+}
+
+#mainContact {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+  font-size: 40px;
+  background-color: beige;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: sans-serif;
+  border-radius: 15px;
+  height: 550px;
+}
+
+#contact {
+  border: 0px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 400px;
+ border-radius: 25px; 
+
+}
+
+.project {
+  float: none;
+  font-size: 24px;
+  padding: 10px;
+  width: auto;
+  list-style-type: none;
+}
+
+#rex {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+  font-size: medium;
+  background-color: black;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: sans-serif;
+  border-radius: 15px;
+  height: 600px;
+}
+
+#box0,
+#box1,
+#box2 {
+  width: 25%;
+  height: 250px;
+  padding-left: 6.25%;
+  padding-top: 10%;
+}
+
+#spin {
+  position: absolute;
+  width: 50%;
+  bottom: 0;
+  margin-left: 25%;
+  margin-right: 25%;
+  border-radius: 5px;
+  background-color: green;
+  height: 45px;
+  color: white;
+  margin-bottom: 5%;
+}
